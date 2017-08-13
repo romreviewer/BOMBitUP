@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
         AppUpdater appUpdater = new AppUpdater(this);
         appUpdater.start();
         new AppUpdater(this).setDisplay(Display.DIALOG);
-        new AppUpdater(this).setUpdateFrom(UpdateFrom.JSON).setUpdateJSON("https://bombitup.000webhostapp.com/update.json").start();
         if(this.isInternetAvailable())
         {
             Toast t = Toast.makeText(MainActivity.this, "Internet Is Connected", Toast.LENGTH_SHORT);
