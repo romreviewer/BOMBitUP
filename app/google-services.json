@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "57274952993",
+    "firebase_url": "https://bombitup-234dd.firebaseio.com",
+    "project_id": "bombitup-234dd",
+    "storage_bucket": "bombitup-234dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57274952993:android:8f00298120a6b66b",
+        "android_client_info": {
+          "package_name": "bombitup.romreviwer.com.bombitup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57274952993-u5p25qekj2khdb62hfurbd051313m5de.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bombitup.romreviwer.com.bombitup",
+            "certificate_hash": "24871339bdc06b940cd58b4d845419e6d1c7d25d"
+          }
+        },
+        {
+          "client_id": "57274952993-dcd94irsbqpohbm2t3birdhbdeocc72b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bombitup.romreviwer.com.bombitup",
+            "certificate_hash": "6561f1f0853af4a79f898808365e162c972c403c"
+          }
+        },
+        {
+          "client_id": "57274952993-qndqao3enhgguau0hknabru84i7nb789.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvaU5pFU-i_KtCz8Cc_nGsrwq6IBUakS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57274952993-qndqao3enhgguau0hknabru84i7nb789.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
