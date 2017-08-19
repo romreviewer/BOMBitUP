@@ -18,10 +18,6 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.github.javiersantos.appupdater.AppUpdater;
-import com.github.javiersantos.appupdater.enums.Display;
-import com.github.javiersantos.appupdater.enums.UpdateFrom;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -61,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         AppUpdater appUpdater = new AppUpdater(this);
         appUpdater.start();
-        new AppUpdater(this).setDisplay(Display.DIALOG);
         if(this.isInternetAvailable())
         {
             Toast t = Toast.makeText(MainActivity.this, "Internet Is Connected", Toast.LENGTH_SHORT);
@@ -205,7 +200,8 @@ public class MainActivity extends AppCompatActivity {
     }
 public void protect(View view)
 {
-    Toast toast1=Toast.makeText(MainActivity.this,"This Feature will be added In the Next Update",Toast.LENGTH_SHORT);
+    Toast toast1=Toast.makeText(MainActivity.this,"This Feature will be added In the Next 
+                                ",Toast.LENGTH_SHORT);
     toast1.show();
 }
 
