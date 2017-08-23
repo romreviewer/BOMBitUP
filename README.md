@@ -7,7 +7,7 @@ I WON'T BE RESPONSIBLE FOR ANY DAMAGE CAUSED USE IT ONLY To PRANK YOUR BUDDIES
 * To Contibute Simply git commit && git push.
 
 # Apk Download Link
-* Version 1.3 Stable [Google Drive](https://goo.gl/w1Py7X) || [Zippyshare](http://www83.zippyshare.com/v/9Vc92uHX/file.html)
+* Version 1.3 Stable [Google Drive](https://goo.gl/w1Py7X) || [Zippyshare](http://www83.zippyshare.com/v/9Vc92uHX/file.html) ||
 * Version 1.2 [Google Drive](https://goo.gl/kvmnyM)
 
 # ChangeLOG (VERSION 1.3)
