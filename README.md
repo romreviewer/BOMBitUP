@@ -7,7 +7,7 @@
 * To Contibute Simply git commit && git push.
 
 # Apk Download Link
-* Version 1.4 [Google Drive](https://goo.gl/VRNLGG)
+* Version 1.4 [Google Drive](https://goo.gl/VRNLGG) Release Date(28/08/2017)
 * Version 1.3 Stable [Google Drive](https://goo.gl/w1Py7X) || [Zippyshare](http://www83.zippyshare.com/v/9Vc92uHX/file.html) ||
 * Version 1.2 [Google Drive](https://goo.gl/kvmnyM)
 
