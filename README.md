@@ -7,17 +7,18 @@
 * To Contibute Simply git commit && git push.
 
 # Apk Download Link
+* Version 1.5 [Google Drive](https://goo.gl/83tGvs) Release Date(09/03/2017)
 * Version 1.4 [Google Drive](https://goo.gl/VRNLGG) Release Date(28/08/2017)
 * Version 1.3 Stable [Google Drive](https://goo.gl/w1Py7X) || [Zippyshare](http://www83.zippyshare.com/v/9Vc92uHX/file.html) ||
 * Version 1.2 [Google Drive](https://goo.gl/kvmnyM)
 
-# ChangeLOG (VERSION 1.4)
-* Protect List Added
-* Protect List Will be cleared on Every Sunday
-* Muffin Api Removed
-* 2 New Api Added
-* Speed Increased
-* Check Update Button Added
+# ChangeLOG (VERSION 1.5)
+* Limit Increased to 60
+* Homeshop 18 Api Added again(LOL)
+* Muffin Api Added Again
+* OYO Api added
+* Performance Improved
+* New About Activity Added
 
 # Liked My Work Buy Me A Coffee Then
 * [Paypal](https://paypal.me/sanchitgera)
