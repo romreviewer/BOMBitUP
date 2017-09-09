@@ -210,7 +210,7 @@ public void protect(View view)
     {
         TextView textView=(TextView) findViewById(R.id.editText);
         TextView output=(TextView) findViewById(R.id.textView);
-        String url="ADD YOU API HERE"+textView.getText();
+        String url="ADD YOUR API HERE"+textView.getText();
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(url)
