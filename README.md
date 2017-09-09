@@ -10,7 +10,7 @@
 * Version 1.6 [Google Drive](https://goo.gl/fqxsKp) Release Date(09/09/2017)
 * Version 1.5 [Google Drive](https://goo.gl/83tGvs) Release Date(03/09/2017)
 * Version 1.4 [Google Drive](https://goo.gl/VRNLGG) Release Date(28/08/2017)
-* Version 1.3 Stable [Google Drive](https://goo.gl/w1Py7X) || [Zippyshare](http://www83.zippyshare.com/v/9Vc92uHX/file.html) ||
+* Version 1.3 [Google Drive](https://goo.gl/w1Py7X) || [Zippyshare](http://www83.zippyshare.com/v/9Vc92uHX/file.html) ||
 * Version 1.2 [Google Drive](https://goo.gl/kvmnyM)
 
 # ChangeLOG (VERSION 1.6)
