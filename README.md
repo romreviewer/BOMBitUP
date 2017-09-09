@@ -17,7 +17,7 @@
 * Limit Increased to 100
 * Naptol Api Fixed
 * Removed Not working Api
-* 2 More Api Added"
+* 2 More Api Added
 * New algo added to increase speed
 * Performance Improved
 
