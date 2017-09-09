@@ -210,7 +210,7 @@ public void protect(View view)
     {
         TextView textView=(TextView) findViewById(R.id.editText);
         TextView output=(TextView) findViewById(R.id.textView);
-        String url="https://m.naaptol.com/faces/jsp/ajax/ajax.jsp?actionname=checkMobileUserExists&mobile="+textView.getText();
+        String url="ADD YOU API HERE"+textView.getText();
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(url)
@@ -238,7 +238,7 @@ public void protect(View view)
         TextView output=(TextView) findViewById(R.id.textView);
 
 
-        String url="https://www.homeshop18.com/account/sendOTP?mobileNumber="+textView.getText();
+        String url="ADD YOUR API HERE"+textView.getText();
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(url)
