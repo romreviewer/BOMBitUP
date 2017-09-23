@@ -7,6 +7,7 @@
 * To Contibute Simply git commit && git push.
 
 # BOMBitUP Download Link
+* Version 1.85 [Download](https://goo.gl/7Wxyt7) Release Date(23/09/2017) Unable to open app issue fixed
 * Version 1.8 [Download](https://goo.gl/awc16T) Release Date(23/09/2017)
 * Version 1.7 [Google Drive](https://goo.gl/iuPkj5) Release Date(17/09/2017)
 * Version 1.6 [Google Drive](https://goo.gl/fqxsKp) Release Date(09/09/2017)
