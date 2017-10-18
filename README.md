@@ -7,6 +7,9 @@
 * To Contibute Simply git commit && git push.
 
 # BOMBitUP Download Link
+
+## Get Version above 1.9 from [Here](https://github.com/Sanchit43/BOMBitUP/releases)
+
 ## Version 1.9 Mandatory Update
 * [Click Here To Download](https://github.com/Sanchit43/BOMBitUP/releases/download/1.9/BOMBitUP_V1.9.apk) Release Date(24/09/2017)
 
