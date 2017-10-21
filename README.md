@@ -6,6 +6,8 @@
 * Simply open the project in Android Studio.
 * To Contibute Simply git commit && git push.
 
+## [Click Here](http://www.bombitup.tk) to Redirect To its website or go to www.bombitup.tk
+
 # BOMBitUP Download Link
 
 ## Get Version above 1.9 from [Here](https://github.com/Sanchit43/BOMBitUP/releases)
