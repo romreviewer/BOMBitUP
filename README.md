@@ -10,20 +10,12 @@
 
 # BOMBitUP Download Link
 
-## Get Version above 1.9 from [Here](https://github.com/Sanchit43/BOMBitUP/releases)
+## Get Version above 2.19 from [Here](https://github.com/Sanchit43/BOMBitUP/releases)
 
-## Version 1.9 Mandatory Update
-* [Click Here To Download](https://github.com/Sanchit43/BOMBitUP/releases/download/1.9/BOMBitUP_V1.9.apk) Release Date(24/09/2017)
-
-* Version 1.85 [Download](https://goo.gl/7Wxyt7) Release Date(23/09/2017) Unable to open app issue fixed
-* Version 1.8 [Download](https://goo.gl/awc16T) Release Date(23/09/2017)
-* Version 1.7 [Google Drive](https://goo.gl/iuPkj5) Release Date(17/09/2017)
-* Version 1.6 [Google Drive](https://goo.gl/fqxsKp) Release Date(09/09/2017)
-
-# ChangeLOG (VERSION 1.8)
+# ChangeLOG (VERSION 2.19)
 * New Apis Added
-* Limit Increased to 130
-* Unlimited Bomber added but not working
+* Permanent Protect List Added
+* Many Bugs Fixed
 
 # Liked My Work Buy Me A Coffee Then
 * [Paypal](https://paypal.me/sanchitgera)
