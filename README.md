@@ -1,3 +1,4 @@
+## This App Is Not Allowed On Store that's why you are here
 ### I WON'T BE RESPONSIBLE FOR ANY DAMAGE CAUSED USE IT ONLY To PRANK YOUR BUDDIES
 
 # BOMBitUP (SMS BOMBER) (PROJECT FIXED)
@@ -10,9 +11,9 @@
 
 # BOMBitUP Download Link
 
-## Get Version above 2.19 from [Here](https://github.com/Sanchit43/BOMBitUP/releases)
+## Get Version above 2.27 from [Here](https://github.com/Sanchit43/BOMBitUP/releases)
 
-# ChangeLOG (VERSION 2.19)
+# ChangeLOG (VERSION 2.27)
 * New Apis Added
 * Permanent Protect List Added
 * Many Bugs Fixed
