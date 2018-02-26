@@ -1,4 +1,3 @@
-## This App Is Not Allowed On Store that's why you are here
 ### I WON'T BE RESPONSIBLE FOR ANY DAMAGE CAUSED USE IT ONLY To PRANK YOUR BUDDIES
 
 # BOMBitUP (SMS BOMBER) (PROJECT FIXED)
