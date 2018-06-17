@@ -17,6 +17,5 @@
 * Permanent Protect List Added
 * Many Bugs Fixed
 
-# Liked My Work Buy Me A Coffee Then
-* [Paypal](https://paypal.me/sanchitgera)
-* UPI - sanchitgera@upi
+# Liked My Work Considor Donating 
+* Bitcoin - 1BG7YcysvordrsbR4jirLyE6CrUXMDrSDA
