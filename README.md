@@ -18,4 +18,4 @@
 * Many Bugs Fixed
 
 # Liked My Work Considor Donating 
-* Bitcoin - 1BG7YcysvordrsbR4jirLyE6CrUXMDrSDA
+* Bitcoin - 1HcWNJH8HpoXUWxXDLsaNyHFYyCUnzAs9j
