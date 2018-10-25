@@ -1,4 +1,4 @@
-### I WON'T BE RESPONSIBLE FOR ANY DAMAGE CAUSED USE IT ONLY To PRANK YOUR BUDDIES
+### I WON'T BE RESPONSIBLE FOR ANY DAMAGE CAUSED. USE IT ONLY TO PRANK YOUR BUDDIES
 
 # BOMBitUP (SMS BOMBER) (PROJECT FIXED)
 * OPEN SOURCED ANDROID SMS BOMBER(INDIA).
@@ -17,5 +17,6 @@
 * Permanent Protect List Added
 * Many Bugs Fixed
 
-# Liked My Work Considor Donating 
+# Liked My Work ? 
+# Consider Donating :
 * Bitcoin - 1HcWNJH8HpoXUWxXDLsaNyHFYyCUnzAs9j
