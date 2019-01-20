@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+
+    <release version="0.2" versioncode="2" >
+        <change>UPDATER ADDED</change>
+        <change>2 api Added For continuous Bombing</change>
+        <change>Status Added</change>
+        <change>BUG: App crashes when textbox is empty</change>
+    </release>
+    <release version="0.1" versioncode="1">
+        <change>First release</change>
+    </release>
+</changelog>

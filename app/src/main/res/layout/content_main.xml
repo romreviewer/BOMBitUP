@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE "
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bombitup.romreviwer.com.bombitup.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:background="#424242"
+        android:onClick="button"
+        android:text="Start"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold|italic"
+        ads:layout_constraintVertical_bias="0.498"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintHorizontal_bias="0.552" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp"></com.google.android.gms.ads.AdView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_marginTop="86dp"
+        android:ems="10"
+        android:hint="Phone Number Without +91"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toTopOf="@+id/adView"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Count"
+        android:inputType="number"
+        android:textAlignment="center"
+        ads:layout_constraintHorizontal_bias="0.683"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintVertical_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="207dp"
+        android:layout_height="66dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:textStyle="italic"
+
+        android:layout_marginTop="80dp"
+        ads:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginEnd="16dp"
+        ads:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        ads:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="80dp"
+        android:text="Status :"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="40dp"
+        ads:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#2E7D32"
+        android:onClick="protect"
+        android:text="Protect List"
+        android:textColor="@color/about_background_color"
+        android:textStyle="bold|italic"
+        ads:layout_constraintEnd_toEndOf="@+id/button"
+        ads:layout_constraintStart_toStartOf="@+id/button"
+        ads:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="204dp"
+        android:layout_height="26dp"
+        android:text="Developed By Sanchit Gera"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="448dp"
+        android:layout_marginTop="23dp"
+        ads:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginBottom="22dp"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintBottom_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="RomReviewer"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent" />
+
+    <!-- <TextView
+         android:id="@+id/textView3"
+         android:layout_width="101dp"
+         android:layout_height="32dp"
+         android:text="Total SENT:"
+         android:textAlignment="center"
+         android:textSize="18sp"
+         android:textStyle="bold|italic"
+         tools:layout_editor_absoluteX="42dp"
+         tools:layout_editor_absoluteY="446dp"
+         ads:layout_constraintBottom_toBottomOf="parent"
+         ads:layout_constraintEnd_toStartOf="@+id/textView4"
+         android:layout_marginEnd="18dp"
+         android:layout_marginBottom="33dp" />
+
+     <TextView
+         android:id="@+id/textView4"
+         android:layout_width="173dp"
+         android:layout_height="0dp"
+         android:textAlignment="center"
+         android:textColor="@android:color/holo_green_light"
+         android:textSize="18sp"
+         ads:layout_constraintHorizontal_bias="0.763"
+         ads:layout_constraintLeft_toLeftOf="parent"
+         ads:layout_constraintRight_toRightOf="parent"
+         android:layout_marginTop="13dp"
+         ads:layout_constraintBottom_toBottomOf="@+id/textView3"
+         ads:layout_constraintTop_toBottomOf="@+id/textView"
+         ads:layout_constraintVertical_bias="1.0" />-->
+
+</android.support.constraint.ConstraintLayout>
