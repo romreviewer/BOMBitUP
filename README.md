@@ -11,12 +11,6 @@ Thank You.
 * Simply open the project in Android Studio.
 * To Contibute Simply git commit && git push.
 
-
-# BOMBitUP Download Link
-
-Old Versions Can Be Downloaded From [Here](https://github.com/romreviewer/BOMBitUP/releases)
-
-
 # Liked My Work ? 
 ## Consider Donating :
 * Bitcoin - 1HcWNJH8HpoXUWxXDLsaNyHFYyCUnzAs9j
