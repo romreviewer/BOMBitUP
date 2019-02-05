@@ -1,8 +1,3 @@
-# Project Discontinued
-This Project Was Creating Trouble for Others Rather Than Fun That's Why This Project and App Is Not Going To Updated Anymore.
-
-Thank You.
-
 # I WON'T BE RESPONSIBLE FOR ANY DAMAGE CAUSED. USE IT ONLY TO PRANK YOUR BUDDIES.
 
 # BOMBitUP (SMS BOMBER) (PROJECT FIXED)
