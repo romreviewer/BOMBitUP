@@ -8,4 +8,4 @@
 
 # Liked My Work ? 
 ## Consider Donating :
-* Bitcoin - 1HcWNJH8HpoXUWxXDLsaNyHFYyCUnzAs9j
+* send me a DM❤️
